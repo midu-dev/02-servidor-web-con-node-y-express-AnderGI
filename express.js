@@ -33,7 +33,7 @@ function startServer() {
     }
   });
 
-  //Manejar posibles acciones http en la ruta /logo.webp
+  //Manejar posibles acciones http en la ruta /logo.webp que no sean GET
   server.all("/logo.webp", (req, res) => {
     if (req.method !== "GET") {
       return res.status(405).send("<h1>405</h1>");
