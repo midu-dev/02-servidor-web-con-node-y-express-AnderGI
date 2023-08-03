@@ -35,7 +35,7 @@ function processRequest(req, res) {
       } else {
         return err405(req, res);
       }
-      break; //porque es necesario un break aqui para que funcione?
+      break;
     case "/contacto":
       if (method === "POST") {
         let body = "";
@@ -50,7 +50,7 @@ function processRequest(req, res) {
       } else {
         return err405(req, res);
       }
-      break; //porque es necesario un break aqui para que funcione?
+      break;
     default:
       err404(req, res);
   }
