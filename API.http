@@ -1,0 +1,36 @@
+### GET Pagina de inicio
+GET http://localhost:1234
+
+### Método no soportado por ruta
+POST http://localhost:1234
+
+### GET Página de error
+GET http://localhost:1234/404 
+### Método no soportado por ruta
+POST http://localhost:1234/404 
+
+### GET Página logo
+GET http://localhost:1234/logo.webp
+
+### Método no soportado por ruta
+POST http://localhost:1234/logo.webp
+
+### POST objeto con name, email y message
+POST http://localhost:1234/contacto
+Content-Type: application/json
+
+{
+    "name": "Ander",
+    "email": "agibarguen@gmail.com",
+    "message" : "Si lees esto que sepas que Iron Maiden > Metallica. De nada ;)"
+}
+
+### POST objeto con name, email y message
+GET http://localhost:1234/contacto
+Content-Type: application/json
+
+{
+    "name": "Ander",
+    "email": "agibarguen@gmail.com",
+    "message" : "Si lees esto que sepas que Iron Maiden > Metallica. De nada ;)"
+}
